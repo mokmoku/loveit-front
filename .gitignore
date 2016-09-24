@@ -1,0 +1,7 @@
+/bower_components/
+/node_modules/
+/typings/
+*.js
+!gulpfile.js
+.DS_Store
+
