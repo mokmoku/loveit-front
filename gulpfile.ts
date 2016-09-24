@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var webserver = require('gulp-webserver');
-var typescript = require('gulp-typescript');
+import gulp = require('gulp');
+import gulp = require('gulp');
+import webserver = require('gulp-webserver');
+import typescript = require('gulp-typescript');
 
 gulp.task('ts', function() {
     return gulp.src(['./*.ts'])
