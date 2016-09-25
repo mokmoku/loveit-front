@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>title</title>
   </head>
-  <body ng-app="myApp" ng-controller="AppController as app">
+  <body ng-app="app" ng-controller="AppController as app">
+    <h1><a ng-link="/">Hello {{home.name}}</a></h1>
+    <ul>
+      <li><a ng-link="item({id: 1})">item1</a></li>
+    </ul>
     <div ng-viewport></div>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-new-router/dist/router.es5.js"></script>
     <script src="app.js"></script>
     <script src="components/home/home.js"></script>
+    <script src="components/item/item.js"></script>
   </body>
 </html>

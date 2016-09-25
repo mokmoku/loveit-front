@@ -3,12 +3,13 @@
 class AppController {
     constructor(private $router: any) {
         $router.config([
-            { path: '/', component: 'home' }
+            { path: '/', component: 'home' },
+            { path: '/item/:id', component: 'item' }
         ]);
     }
 }
 
-angular.module('myApp', ['ngNewRouter', 'app.home'])
+angular.module('app', ['ngNewRouter', 'app.home', 'app.item'])
     .config(['$locationProvider', ($locationProvider) => {
         $locationProvider.html5Mode({enabled: true, requireBase: false});
     })
