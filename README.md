@@ -2,6 +2,7 @@
 
 ```
 $ npm install && typings install
-$ gulp
+$ gulp ts
+$ go run server.go
 > Webserver started at http://localhost:8000
 ```
