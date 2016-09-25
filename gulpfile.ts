@@ -4,7 +4,7 @@ import webserver = require('gulp-webserver');
 import typescript = require('gulp-typescript');
 
 gulp.task('ts', function() {
-    return gulp.src(['./*.ts'])
+    return gulp.src(['./**/*.ts'])
         .pipe(typescript())
         .js
         .pipe(gulp.dest('./'));
@@ -17,5 +17,5 @@ gulp.task('default', ['ts'], function() {
             port: 8000,
             livereload: true
         }));
-    gulp.watch('./*.ts', ['ts']);
+    gulp.watch('./**/*.ts', ['ts']);
 });
