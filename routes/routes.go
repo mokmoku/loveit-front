@@ -6,6 +6,5 @@ import(
 )
 
 func Include() {
-	goji.Get("/", controllers.Home)
-	goji.Get("/item/:id", controllers.Item)
+	goji.Get("/*", controllers.Home)
 }
